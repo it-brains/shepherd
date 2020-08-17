@@ -1,6 +1,6 @@
 {
-  "name": "shepherd.js",
-  "version": "8.0.2",
+  "name": "@it-brains/shepherd",
+  "version": "8.0.3",
   "description": "Guide your users through a tour of your app.",
   "keywords": [
     "site tour",
@@ -11,7 +11,7 @@
   "homepage": "https://shepherdjs.dev",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shipshapecode/shepherd.git"
+    "url": "git+https://github.com/it-brains/shepherd.git"
   },
   "funding": {
     "type": "individual",
@@ -114,14 +114,6 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "authors": [
-    "Adam Schwartz <adam.flynn.schwartz@gmail.com>",
-    "Zack Bloom <zackbloom@gmail.com>"
-  ],
-  "maintainers": [
-    "Robert Wagner <rwwagner90@gmail.com>",
-    "Chuck Carpenter <chuck@shipshape.io>"
-  ],
   "release-it": {
     "plugins": {
       "release-it-lerna-changelog": {
@@ -138,5 +130,12 @@
     "npm": {
       "publish": false
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/it-brains/shepherd/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "author": "Bogdan Revyakin <b.revyakin93@gmail.com>"
 }
