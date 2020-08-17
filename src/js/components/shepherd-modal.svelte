@@ -94,9 +94,9 @@
    */
   function _addStepEventListeners() {
     // Prevents window from moving on touch.
-    window.addEventListener('touchmove', _preventModalBodyTouch, {
-      passive: false
-    });
+    // window.addEventListener('touchmove', _preventModalBodyTouch, {
+    //   passive: false
+    // });
   }
 
   /**

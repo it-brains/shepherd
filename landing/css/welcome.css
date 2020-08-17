@@ -377,7 +377,6 @@ pre {
 button {
   background-color: transparent;
   background-image: none;
-  padding: 0;
 }
 
 /**
@@ -479,6 +478,10 @@ textarea {
   resize: vertical;
 }
 
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #a0aec0;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: #a0aec0;
@@ -577,10 +580,6 @@ video {
   max-width: 100%;
   height: auto;
 }
-
-/*tailwind start components */
-
-/*tailwind end components */
 
 .bg-navy {
   --bg-opacity: 1;
@@ -860,6 +859,50 @@ video {
   z-index: 20;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
 html, body {
   font-family: "Pier Sans", "proxima-nova", "Helvetica Neue", sans-serif;
 }
@@ -1094,6 +1137,9 @@ pre {
   border-bottom-style: solid;
 }
 
+@media (min-width: 640px) {
+}
+
 @media (min-width: 768px) {
   .md\:justify-between {
     justify-content: space-between;
@@ -1184,4 +1230,7 @@ pre {
   .lg\:w-1\/3 {
     width: 33.333333%;
   }
+}
+
+@media (min-width: 1280px) {
 }
